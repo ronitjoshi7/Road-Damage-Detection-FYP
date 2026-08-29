@@ -13,3 +13,11 @@ node_modules/
 .DS_Store
 *.log
 uploads/Road-Damage-Detection-FYP/
+backend/uploads/
+Road-Damage-Detection-FYP/
+report.pdf
+test_road.jpg
+*.jpg
+*.jpeg
+*.png
+!frontend/src/assets/
