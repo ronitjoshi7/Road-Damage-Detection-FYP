@@ -20,6 +20,7 @@ services:
       ALGORITHM: HS256
       ACCESS_TOKEN_EXPIRE_MINUTES: 30
       UPLOAD_DIR: ./uploads
+      MODEL_PATH: ./model/best.pt
     depends_on:
       - db
     volumes:
@@ -31,9 +32,6 @@ services:
       - "5173:5173"
     depends_on:
       - backend
-    volumes:
-      - ./frontend:/app
-      - /app/node_modules
 
 volumes:
   postgres_data:
